@@ -1,17 +1,19 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
+  get '/' => 'static_pages#home'
 
-  get 'static_pages/military'
+  get '/home' => 'static_pages#home'
 
-  get 'static_pages/web'
+  get '/military' => 'static_pages#military'
 
-  get 'static_pages/aug'
+  get '/web' => 'static_pages#web'
 
-  get 'static_pages/drone'
+  get '/aug' => 'static_pages#aug'
 
-  get 'static_pages/patent'
+  get '/drone' => 'static_pages#drone'
 
-  get 'static_pages/paper'
+  get '/patent' => 'static_pages#patent'
+
+  get 'paper' => 'static_pages#paper'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

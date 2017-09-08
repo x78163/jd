@@ -10,6 +10,13 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
+//= require jquery_ujs
+//= require bootstrap-sprockets
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+// app/assets/javascripts/application.js
+// app/assets/javascripts/navbar.js
+// app/assets/javascripts/parallax.js
+// app/assets/javascripts/textscramble.js

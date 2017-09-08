@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+@import "static_pages.scss";
+@import "parallax.scss";
+@import "Parallax-Scroll-Effect1.scss";
+@import "textscramble.scss";
