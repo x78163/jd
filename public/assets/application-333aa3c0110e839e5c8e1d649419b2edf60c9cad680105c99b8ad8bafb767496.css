@@ -1,0 +1,485 @@
+#box-1 {
+  height:100vh;
+  width:100%;
+  background-image:url(http://res.cloudinary.com/x78163/image/upload/v1504645041/ZIG_64_du0ggg.jpg);
+  background-size:cover;
+  display:table;
+  background-attachment:fixed;
+  background-position:center;
+}
+
+#box-2 {
+  height:111vh;
+  width:100%;
+  background-image:linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 17%), url(http://res.cloudinary.com/x78163/image/upload/v1504646067/20151003_150303_vf44ag.jpg);
+  background-size:cover;
+  display:table;
+  background-attachment:fixed;
+  background-position:center;
+}
+
+#box-3 {
+  height:100vh;
+  width:100%;
+  background-image:linear-gradient(-30deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 4%), url(http://res.cloudinary.com/x78163/image/upload/v1504646071/GOPR2048_omilii.jpg);
+  background-size:cover;
+  display:table;
+  background-attachment:fixed;
+  background-position:center;
+}
+#box-6 {
+  height:100vh;
+  width:100%;
+  background-image:linear-gradient(-30deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 4%), url(http://res.cloudinary.com/x78163/image/upload/v1504646022/2013-10-17_17-05-30_406_kxxcaw.jpg);
+  background-size:cover;
+  display:table;
+  background-attachment:fixed;
+  background-position:center;
+}
+
+h1 {
+  font-family:arial black;
+  font-size:50px;
+  color:white;
+  margin:0px;
+  text-align:center;
+  display:table-cell;
+  vertical-align:middle;
+}
+
+img {
+  width:75%;
+  max-height:336px;
+  max-width:480px;
+}
+
+#box-4 {
+  height:100vh;
+  width:100%;
+  background-image:linear-gradient(-30deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 4%), url(http://res.cloudinary.com/x78163/image/upload/v1504645163/IMG_5425_z42lvh.jpg);
+  background-size:cover;
+  display:table;
+  background-attachment:fixed;
+  background-position:left;
+}
+
+#box-5 {
+  height:100vh;
+  width:100%;
+  background-image:linear-gradient(-30deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 4%), url(http://res.cloudinary.com/x78163/image/upload/v1504645927/20150416_105939_do8ihe.jpg);
+  background-size:cover;
+  display:table;
+  background-attachment:fixed;
+  background-position:center;
+}
+
+img-ring {
+  width:94vh;
+}
+
+.h1, h1 {
+}
+
+Ministry-header {
+}
+
+ministry-header {
+  color:black;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Exo+2:300);
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/* line 4, /home/x78163/code/x78163/jd/app/assets/stylesheets/hexmenu.scss */
+body {
+  margin: 0;
+  background-color: #ffffff;
+  background-image: url(http://mobsaver.raonnet.com/image/5.png);
+  background-repeat: repeat;
+  background-position: top center;
+  font-family: 'Exo 2', 'Nanum Gothic', sans-serif;
+}
+
+/* line 12, /home/x78163/code/x78163/jd/app/assets/stylesheets/hexmenu.scss */
+.menu-container {
+  text-align: center;
+  margin-top: 180px;
+  margin-bottom: 50px;
+}
+
+/* line 17, /home/x78163/code/x78163/jd/app/assets/stylesheets/hexmenu.scss */
+.hex-wrapper {
+  display: inline-block;
+}
+
+/* line 20, /home/x78163/code/x78163/jd/app/assets/stylesheets/hexmenu.scss */
+.hex-row {
+  clear: left;
+}
+
+/* line 23, /home/x78163/code/x78163/jd/app/assets/stylesheets/hexmenu.scss */
+.shift {
+  margin-left: 98px;
+}
+
+/* line 26, /home/x78163/code/x78163/jd/app/assets/stylesheets/hexmenu.scss */
+.hexagon {
+  float: left;
+  position: relative;
+  margin: 30px 3px;
+  width: 190px;
+  height: 110px;
+  background-color: #fff;
+  background-position: center center;
+  z-index: 1;
+  /* Text styling */
+  line-height: 110px;
+  text-align: center;
+  font-family: 'Exo 2', 'Nanum Gothic', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 6px;
+  color: #000;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: color 500ms ease, text-shadow 500ms ease, background-color 1000ms ease, -webkit-transform 1s ease-in-out;
+}
+
+/* line 47, /home/x78163/code/x78163/jd/app/assets/stylesheets/hexmenu.scss */
+.hexagon:hover {
+  color: #fff;
+  text-shadow: 0 0 10px white;
+  background-color: #000;
+}
+
+/* line 52, /home/x78163/code/x78163/jd/app/assets/stylesheets/hexmenu.scss */
+.hexagon .face1,
+.hexagon .face2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: inherit;
+  z-index: -1;
+  /* Keeps borders smooth in webkit */
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+/* line 65, /home/x78163/code/x78163/jd/app/assets/stylesheets/hexmenu.scss */
+.hexagon .face1:before,
+.hexagon .face2:before {
+  content: '';
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background: inherit;
+}
+
+/* line 73, /home/x78163/code/x78163/jd/app/assets/stylesheets/hexmenu.scss */
+.hexagon .face1 {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+/* line 74, /home/x78163/code/x78163/jd/app/assets/stylesheets/hexmenu.scss */
+.hexagon .face1:before {
+  left: 0;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: rotate(-60deg) translate(-110px, 0);
+          transform: rotate(-60deg) translate(-110px, 0);
+}
+
+/* line 79, /home/x78163/code/x78163/jd/app/assets/stylesheets/hexmenu.scss */
+.hexagon .face2 {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+/* line 80, /home/x78163/code/x78163/jd/app/assets/stylesheets/hexmenu.scss */
+.hexagon .face2:before {
+  right: 0;
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: rotate(60deg) translate(110px, 0);
+          transform: rotate(60deg) translate(110px, 0);
+}
+/* line 9, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #130d0a;
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+}
+
+/* line 17, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+#hero {
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 22, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+#content {
+  background-color: #130d0a;
+}
+
+/* line 25, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+.layer {
+  background-position: bottom center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  position: fixed;
+  z-index: -1;
+}
+
+/* line 35, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+#hero-mobile {
+  display: none;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/full_illustration.png") no-repeat center bottom/cover;
+  height: 320px;
+}
+
+/* line 41, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+.first-section {
+  padding: 50px 0 20px 0;
+}
+
+/* line 44, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+.text-header {
+  font-size: 50px;
+  text-align: center;
+}
+
+/* line 48, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+h1 {
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+/* line 52, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+p {
+  color: #ede0d5;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+/* line 58, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+#hero, .layer {
+  min-height: 800px;
+}
+
+/* line 62, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+.layer-bg {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg");
+}
+
+/* line 65, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+.layer-1 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_03.png\a     ");
+  background-position: left bottom;
+}
+
+/* line 70, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+.layer-2 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_02.png");
+}
+
+/* line 73, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+.layer-3 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_man.png\a     ");
+  background-position: right bottom;
+}
+
+/* line 78, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+.layer-4 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png\a     ");
+}
+
+/* line 83, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+.layer-overlay {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png\a     ");
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 92, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+  #hero {
+    display: none;
+  }
+
+  /* line 95, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+  #hero-mobile {
+    display: block;
+  }
+}
+/* line 102, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+.tutorial-link {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: underline;
+}
+/* line 106, /home/x78163/code/x78163/jd/app/assets/stylesheets/parallax.scss */
+.tutorial-link:hover {
+  color: #ede0d5;
+}
+/* line 1, /home/x78163/code/x78163/jd/app/assets/stylesheets/static_pages.scss */
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 7, /home/x78163/code/x78163/jd/app/assets/stylesheets/static_pages.scss */
+.site-nav {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  height: 75px;
+}
+
+/* line 18, /home/x78163/code/x78163/jd/app/assets/stylesheets/static_pages.scss */
+.nav-link {
+  display: inline-block;
+  margin-right: 20px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.3em;
+  line-height: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: .5em;
+  border-bottom: 1px solid rgba(190, 121, 13, 0.3);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+/* line 35, /home/x78163/code/x78163/jd/app/assets/stylesheets/static_pages.scss */
+.nav-link:hover, .nav-link:focus {
+  color: #be790d;
+  border-bottom: 10px solid rgba(190, 121, 13, 0.3);
+  text-decoration: none;
+  outline: 0;
+}
+
+/* line 42, /home/x78163/code/x78163/jd/app/assets/stylesheets/static_pages.scss */
+.nav-link:active {
+  border-bottom: 10px solid rgba(190, 121, 13, 0.3);
+  text-decoration: none;
+  outline: 0;
+}
+
+/* line 48, /home/x78163/code/x78163/jd/app/assets/stylesheets/static_pages.scss */
+.nav-logo {
+  display: inline-block;
+  margin-right: 20px;
+  line-height: 2;
+  padding: .4em;
+  background-image--moz-transition: 0.3s ease;
+  background-image--o-transition: 0.3s ease;
+  background-image--webkit-transition: 0.3s ease;
+  background-image-transition: 0.3s ease;
+}
+
+/* line 62, /home/x78163/code/x78163/jd/app/assets/stylesheets/static_pages.scss */
+.nav-logo:hover, .nav-logo:focus {
+  outline: 0;
+}
+
+/* line 66, /home/x78163/code/x78163/jd/app/assets/stylesheets/static_pages.scss */
+.bg1 {
+  background-color: #ccc;
+  width: 100%;
+  height: 700px;
+}
+
+/* line 72, /home/x78163/code/x78163/jd/app/assets/stylesheets/static_pages.scss */
+.bg2 {
+  color: #ccc;
+  width: 100%;
+  height: 2000px;
+}
+
+/* line 78, /home/x78163/code/x78163/jd/app/assets/stylesheets/static_pages.scss */
+.show {
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 83, /home/x78163/code/x78163/jd/app/assets/stylesheets/static_pages.scss */
+.transition {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+/* line 90, /home/x78163/code/x78163/jd/app/assets/stylesheets/static_pages.scss */
+.down {
+  top: 50px;
+}
+
+/* line 94, /home/x78163/code/x78163/jd/app/assets/stylesheets/static_pages.scss */
+.up {
+  top: 1800px;
+}
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono:100";
+/* line 3, /home/x78163/code/x78163/jd/app/assets/stylesheets/textscramble.scss */
+html, body {
+  font-family: 'Roboto Mono', monospace;
+  background: #212121;
+  height: 100%;
+}
+
+/* line 9, /home/x78163/code/x78163/jd/app/assets/stylesheets/textscramble.scss */
+.container-scramble {
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 16, /home/x78163/code/x78163/jd/app/assets/stylesheets/textscramble.scss */
+.text {
+  font-weight: 100;
+  font-size: 28px;
+  color: #FAFAFA;
+}
+
+/* line 21, /home/x78163/code/x78163/jd/app/assets/stylesheets/textscramble.scss */
+.dud {
+  color: #757575;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+@import "static_pages.scss";
+@import "parallax.scss";
+@import "Parallax-Scroll-Effect1.scss";
+@import "textscramble.scss";
