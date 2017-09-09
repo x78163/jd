@@ -19,7 +19,7 @@ html, body{
 
 .nav{
   transition: all .5s ease;
-  font-size: 12px;
+  font-size: 1vw;
   font-family: 'Open Sans', sans-serif;
   width: 100%;
   z-index: 100;
@@ -42,8 +42,8 @@ html, body{
     padding-right: 60px;
     display: inline-block;
     float: left;
-    font-size: 20px;
-    font-family: 'Pacifico', cursive;
+    font-size: 2vw;
+    font-family: 'Roboto Mono', monospace;
     -webkit-transition-property: background-color, box-shadow, line-height, height;
     transition-property: background-color, box-shadow, line-height, height;
     -webkit-transition-timing-function: cubic-bezier(.78,.13,.15,.86);
@@ -51,7 +51,8 @@ html, body{
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     a{
-      color: #E33B00;
+      color: white;
+      font-weight: bolder;
       text-decoration: none;
     }
 
@@ -89,7 +90,7 @@ html, body{
       line-height: 60px;
     }
     ul li a{
-      color: #6E7982;
+      color: white;
     }
     ul li:hover a{
       color: #E33B00;
@@ -229,7 +230,7 @@ html, body{
     float: none;
   }
   .sticky .brand{
-    background-color: white;
+    background-color: rgba(68,68,68,.75);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   }
   #nav{
