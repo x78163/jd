@@ -1,36 +1,33 @@
-var navbarHeight = $('.navbar').height();
+/*http://callmenick.com/post/expanding-search-bar-using-css-transitions*/
+(function($) {
+    "use strict";
 
-$(window).scroll(function() {
-  var navbarColor = "62,195,246";//color attr for rgba
-  var smallLogoHeight = $('.small-logo').height();
-  var bigLogoHeight = $('.big-logo').height();
+    var $navbar = $(".nav"),
+        y_pos = $navbar.offset().top,
+        height = $navbar.height();
 
+    //scroll top 0 sticky
+    $(document).scroll(function() {
+        var scrollTop = $(this).scrollTop();
+        if (scrollTop > 0) {
+          $navbar.addClass("sticky");
+        } else {
+          $navbar.removeClass("sticky");
+        }
+    });
 
-  var smallLogoEndPos = 0;
-  var smallSpeed = (smallLogoHeight / bigLogoHeight);
+    //section sticky
+    /*$(document).scroll(function() {
+        var scrollTop = $(this).scrollTop();
+        if ($(window).height() > scrollTop) {
+          $navbar.removeClass("sticky");
+        } else {
+          $navbar.addClass("sticky");
+        }
+    });*/
 
-  var ySmall = ($(window).scrollTop() * smallSpeed);
+})(jQuery, undefined);
 
-  var smallPadding = navbarHeight - ySmall;
-  if (smallPadding > navbarHeight) { smallPadding = navbarHeight; }
-  if (smallPadding < smallLogoEndPos) { smallPadding = smallLogoEndPos; }
-  if (smallPadding < 0) { smallPadding = 0; }
-
-  $('.small-logo-container ').css({ "padding-top": smallPadding});
-
-  var navOpacity = ySmall / smallLogoHeight;
-  if  (navOpacity > 1) { navOpacity = 1; }
-  if (navOpacity < 0 ) { navOpacity = 0; }
-  var navBackColor = 'rgba(' + navbarColor + ',' + navOpacity + ')';
-  $('.navbar').css({"background-color": navBackColor});
-
-  var shadowOpacity = navOpacity * 0.4;
-  if ( ySmall > 1) {
-    $('.navbar').css({"box-shadow": "0 2px 3px rgba(0,0,0," + shadowOpacity + ")"});
-  } else {
-    $('.navbar').css({"box-shadow": "none"});
-  }
-
-
-
+$(".menu").click(function(){
+  $("#nav").toggleClass("open");
 });
