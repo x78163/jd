@@ -42,7 +42,7 @@ gem 'font-awesome-sass'
 gem 'jquery-rails'
 
 gem 'simple_form'
-
+gem 'momentjs-rails', '>= 2.9.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
