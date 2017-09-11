@@ -1,7 +1,7 @@
 #box-1 {
   height:100vh;
   width:100%;
-  background-image:url(http://res.cloudinary.com/x78163/image/upload/v1504645041/ZIG_64_du0ggg.jpg);
+  background-image:url(http://teaching.utoronto.ca/wp-content/uploads/2015/05/atelier-enseignement-de-informatique.jpg);
   background-size:cover;
   display:table;
   background-attachment:fixed;
@@ -11,7 +11,7 @@
 #box-2 {
   height:111vh;
   width:100%;
-  background-image:linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 17%), url(http://res.cloudinary.com/x78163/image/upload/v1504645872/SNC00137_m7m5yp.jpg);
+  background-image:linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 17%), url(http://teaching.utoronto.ca/wp-content/uploads/2015/05/atelier-enseignement-de-informatique.jpg);
   background-size:cover;
   display:table;
   background-attachment:fixed;
@@ -21,7 +21,7 @@
 #box-3 {
   height:100vh;
   width:100%;
-  background-image:linear-gradient(-30deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 4%), url(http://res.cloudinary.com/x78163/image/upload/v1504646071/GOPR2048_omilii.jpg);
+  background-image:linear-gradient(-30deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 4%), url(http://teaching.utoronto.ca/wp-content/uploads/2015/05/atelier-enseignement-de-informatique.jpg);
   background-size:cover;
   display:table;
   background-attachment:fixed;
@@ -30,7 +30,7 @@
 #box-6 {
   height:100vh;
   width:100%;
-  background-image:linear-gradient(-30deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 4%), url(http://res.cloudinary.com/x78163/image/upload/v1504646022/2013-10-17_17-05-30_406_kxxcaw.jpg);
+  background-image:linear-gradient(-30deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 4%), url(http://teaching.utoronto.ca/wp-content/uploads/2015/05/atelier-enseignement-de-informatique.jpg);
   background-size:cover;
   display:table;
   background-attachment:fixed;
@@ -56,7 +56,7 @@ img {
 #box-4 {
   height:100vh;
   width:100%;
-  background-image:linear-gradient(-30deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 4%), url(http://res.cloudinary.com/x78163/image/upload/v1504645163/IMG_5425_z42lvh.jpg);
+  background-image:linear-gradient(-30deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 4%), url(http://teaching.utoronto.ca/wp-content/uploads/2015/05/atelier-enseignement-de-informatique.jpg);
   background-size:cover;
   display:table;
   background-attachment:fixed;
@@ -66,7 +66,7 @@ img {
 #box-5 {
   height:100vh;
   width:100%;
-  background-image:linear-gradient(-30deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 4%), url(http://res.cloudinary.com/x78163/image/upload/v1504645927/20150416_105939_do8ihe.jpg);
+  background-image:linear-gradient(-30deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 4%), url(http://teaching.utoronto.ca/wp-content/uploads/2015/05/atelier-enseignement-de-informatique.jpg);
   background-size:cover;
   display:table;
   background-attachment:fixed;

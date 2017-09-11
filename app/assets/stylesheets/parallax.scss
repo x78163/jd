@@ -1,28 +1,117 @@
-#mountain {
-  height: 800px;
+// Preview of the tutorial by Patryk Zabielski
+// www.dribbble.com/zabielski | www.patrykzabielski.com
+// Tutorial: https://medium.com/@PatrykZabielski/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27
+
+$bronze: #130d0a;
+$white: #fff;
+$heroHeight: 1vh;
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  font-family: 'Playfair Display', serif;
+  color: $white;
+}
+
+#hero {
+  // height: $heroHeight;
   overflow: hidden;
   position: relative;
+  // width: 145%;
+    // height: 212%;
+}
+#content {
+  background-color: $bronze;
 }
 .layer {
-  background-position: bottom center;
-  background-size: auto;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 800px;
-  position: fixed;
-  z-index: -1;
+      background-position: right;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+#hero-mobile {
+  display: none;
+  background: url("http://res.cloudinary.com/x78163/image/upload/v1505080933/soudafull_puhdoq.jpg") no-repeat center bottom / cover;
+  height: 320px;
+}
+
+.first-section {
+  padding: 50px 0 20px 0;
+}
+.text-header {
+  font-size: 50px;
+  text-align: center;
+}
+h1 {
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+p {
+  color: #ede0d5;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+#hero, .layer {
+  min-height: 1000px;
+}
+
+.layer-bg {
+  background-image: linear-gradient(-30deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 4%), url('http://res.cloudinary.com/x78163/image/upload/v1505073166/souda_pgt4ln.jpg');
+    background-size: 150%;
+    margin-top: -3%;
+    background-position: top;
+    background-position-x: center;
+    background-position-y: top;
 }
 .layer-1 {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_03.png');
-  background-position: left bottom;
-}
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_03.png
+    ');
+    background-position: left bottom;
+    }
 .layer-2 {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_02.png');
+  background-image: linear-gradient(-30deg, rgba(0, 101, 168, 0.12) 0%, rgba(0, 36, 61, 0.13) 4%),  url('http://res.cloudinary.com/x78163/image/upload/v1505072328/souda12_hzr8lt.png');
 }
 .layer-3 {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_man.png');
-  background-position: right bottom;
-}
+  background-image:   url('http://res.cloudinary.com/x78163/image/upload/v1505072435/soudarock_t6wyqm.png
+    ');
+    background-position: right;
+        margin-top: 10%;
+    }
 .layer-4 {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png');
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png
+    ');
+
+    }
+.layer-overlay {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png
+    ');
+
+    }
+
+
+// Media Queries
+@media only screen and (max-width: 768px) {
+  #hero {
+    display: none;
+  }
+  #hero-mobile {
+    display: block;
+  }
+}
+
+
+// Additional
+.tutorial-link {
+  color: $white;
+  font-size: 18px;
+  text-decoration: underline;
+  &:hover {
+    color: #ede0d5;
+  }
 }

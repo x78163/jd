@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+* {
+  font-family: 'Open Sans Condensed', sans-serif;
+/*   transition: all 0.5s linear; */
+}
+body {
+  margin:0; padding:0;
+  font-size:18px;
+}
+
+h1 {
+
+}
+.container {
+  display:none;
+  max-width: 100%;
+height:10000px;
+}
+.container.loaded {
+  display:block;
+
+  height:10000px;
+}
+
+.page {
+
+  background-color:#fefefe;
+           position:fixed;
+              min-width:100%;
+             min-height:100%;
+  -webkit-transform:translate(0,0);
+     -moz-transform:translate(0,0);
+      -ms-transform:translate(0,0);
+       -o-transform:translate(0,0);
+          transform:translate(0,0);
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow:hidden;
+  box-shadow: 0 1px 14px 3px #333333;
+/*   padding-top:200px; */
+}
+.page.cover {
+/*   padding-top:0; */
+}
+/*
+.page.cover {
+  -webkit-transform:translate(100%,0);
+     -moz-transform:translate(100%,0);
+      -ms-transform:translate(100%,0);
+       -o-transform:translate(100%,0);
+          transform:translate(100%,0);
+}
+.page.cover.active {
+  -webkit-transform:translate(0,0);
+     -moz-transform:translate(0,0);
+      -ms-transform:translate(0,0);
+       -o-transform:translate(0,0);
+          transform:translate(0,0);
+}
+*/
+.page .content {
+  max-width:100%;
+  margin:20px auto;
+  padding:20px;
+}
+
+.page .content img {
+  width:100%;
+  min-width:100%;
+}
+.page.cover:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height:300px;
+  height: 40%;
+  background: -webkit-linear-gradient(transparent, black);
+  background: -moz-linear-gradient(transparent, black);
+  background: -ms-linear-gradient(transparent, black);
+  background: -o-linear-gradient(transparent, black);
+  background: linear-gradient(transparent, black);
+}
+.page.cover .title {
+  max-width:640px;
+  margin:20px auto;
+  padding:20px;
+  color:#fefefe;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.page.cover .title h1 {
+  font-size:4rem;
+}
+
+
+.container .cover.nature {
+/*   height:125%; */
+  background:#726f77;;
+  background-image:url(http://res.cloudinary.com/x78163/image/upload/v1504645872/SNC00137_m7m5yp.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .cover.webdev {
+/*   height:150%; */
+  background:red;
+  background-image:url(http://res.cloudinary.com/x78163/image/upload/v1505096934/lewagon_wemwtu.jpg);
+background-size: cover;
+    background-position: center;
+}
+
+.container .cover.uascg {
+/*   height:200%; */
+  background:orange;
+  background-image:url(http://res.cloudinary.com/x78163/image/upload/v1505098986/2013-02-27_16-28-09_270_amcsui.jpg);
+background-size: cover;
+    background-position: center;
+}
+
+.container .cover.advisor {
+/*   height:125%; */
+  background:yellow;
+  background-image:url(http://res.cloudinary.com/x78163/image/upload/v1505099655/advisor_e37ftt.jpg);
+background-size: cover;
+    background-position: center;
+}
+
+.container .cover.commander {
+/*   height:175%; */
+  background:blue;
+  background-image:url(http://res.cloudinary.com/x78163/image/upload/v1505100015/commander_oz1u6k.jpg);
+background-size: cover;
+    background-position: center;
+}
+
+.container .cover.pilot {
+/*   height:150%; */
+  background:green;
+  background-image:url(http://res.cloudinary.com/x78163/image/upload/v1505100394/pilot_mtterf.jpg);
+background-size: cover;
+    background-position: center;
+}

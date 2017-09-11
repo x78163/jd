@@ -14,3 +14,4 @@
 // app/assets/javascripts/navbar.js
 // app/assets/javascripts/parallax.js
 // app/assets/javascripts/textscramble.js
+// app/assets/javascripts/curtain.js

@@ -56,7 +56,7 @@ var TextScramble = function () {
           char = this.randomChar();
           this.queue[i].char = char;
         }
-        output += '<span class="dud">' + char + '</span>';
+        output += '<span class="dud">'  + char + '</span>';
       } else {
         output += from;
       }
@@ -81,7 +81,7 @@ var TextScramble = function () {
 // Example
 // ——————————————————————————————————————————————————
 
-var phrases = ['Pilot', 'Inventor', 'Inventor', 'Traveler', 'Leader', 'Drone Afficionado', 'Web Developer'];
+var phrases = ['>Commercial Pilot_', '>Inventor_', '>Inventor_', '>Traveler_', '>Leader_', '>Drone Afficionado_', '>Web Developer_', '>MBA_', '>Secret Clearance_', '>Eagle Scout_', '>Congressional Gold Awardee_', '>Master Diver_'];
 
 var el = document.querySelector('.text');
 var fx = new TextScramble(el);
