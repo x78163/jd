@@ -19,7 +19,7 @@ html, body{
 
 .nav{
   transition: all .5s ease;
-  font-size: 1vw;
+  font-size: 115%;
   font-family: 'Open Sans', sans-serif;
   width: 100%;
   z-index: 100;
@@ -42,7 +42,7 @@ html, body{
     padding-right: 60px;
     display: inline-block;
     float: left;
-    font-size: 2vw;
+    font-size: 3vw;
     font-family: 'Roboto Mono', monospace;
     -webkit-transition-property: background-color, box-shadow, line-height, height;
     transition-property: background-color, box-shadow, line-height, height;
@@ -228,6 +228,8 @@ html, body{
     display: block;
     text-align: center;
     float: none;
+    font-size: 3vw;
+    font-family: 'Roboto Mono', monospace;
   }
   .sticky .brand{
     background-color: rgba(68,68,68,.75);

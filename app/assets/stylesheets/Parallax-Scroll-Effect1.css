@@ -1,7 +1,7 @@
 #box-1 {
   height:100vh;
   width:100%;
-  background-image:url(http://teaching.utoronto.ca/wp-content/uploads/2015/05/atelier-enseignement-de-informatique.jpg);
+  background-image:url(www.http://lorempixel.com/400/200/sports/1/);
   background-size:cover;
   display:table;
   background-attachment:fixed;
@@ -30,7 +30,7 @@
 #box-6 {
   height:100vh;
   width:100%;
-  background-image:linear-gradient(-30deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 4%), url(http://teaching.utoronto.ca/wp-content/uploads/2015/05/atelier-enseignement-de-informatique.jpg);
+  background-image:linear-gradient(-30deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 4%), url(http://lorempixel.com/output/technics-q-c-640-480-10.jpg);
   background-size:cover;
   display:table;
   background-attachment:fixed;
