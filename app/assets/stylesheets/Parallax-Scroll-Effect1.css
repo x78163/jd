@@ -71,6 +71,7 @@ img {
   display:table;
   background-attachment:fixed;
   background-position:center;
+  position: absolute;
 }
 
 img-ring {
