@@ -7,6 +7,8 @@
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     max-width: 23em;
+        position: relative;
+    z-index: 2;
   }
 
 #hexGrid:after {
