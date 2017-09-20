@@ -19,4 +19,7 @@ class StaticPagesController < ApplicationController
 
   def paper
   end
+
+  def experience
+  end
 end
