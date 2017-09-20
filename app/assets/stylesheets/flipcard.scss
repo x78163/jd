@@ -54,6 +54,35 @@ h1 {
 }
 
 .item-5 {
+     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940507/congressional_zhcjpw.png);
+        background-size: contain;
+    background-position: center;
+    margin-bottom: 10%;
+    background-repeat: no-repeat;
+}
+.item-6 {
+     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940507/eagle_imisds.png);
+        background-size: contain;
+    background-position: center;
+    margin-bottom: 10%;
+    background-repeat: no-repeat;
+}
+.item-7 {
+     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940508/venture_aqz4zy.png);
+        background-size: contain;
+    background-position: center;
+    margin-bottom: 10%;
+    background-repeat: no-repeat;
+}
+.item-8 {
+     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940507/Agile_dobvr3.png);
+        background-size: contain;
+    background-position: center;
+    margin-bottom: 10%;
+    background-repeat: no-repeat;
+}
+
+.item-9 {
      background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505862154/ror_iaqhvo.png);
         background-size: contain;
     background-position: center;
@@ -61,6 +90,101 @@ h1 {
     background-repeat: no-repeat;
 }
 
+.item-10 {
+     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940507/git_ojwhxw.png);
+        background-size: contain;
+    background-position: center;
+    margin-bottom: 10%;
+    background-repeat: no-repeat;
+}
+
+.item-11 {
+     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940507/github_omaoja.png);
+        background-size: contain;
+    background-position: center;
+    margin-bottom: 10%;
+    background-repeat: no-repeat;
+}
+
+.item-12 {
+     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940507/heroku_graonu.png);
+        background-size: contain;
+    background-position: center;
+    margin-bottom: 10%;
+    background-repeat: no-repeat;
+}
+
+.item-13 {
+     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940507/html_ktgxdy.png);
+        background-size: contain;
+    background-position: center;
+    margin-bottom: 10%;
+    background-repeat: no-repeat;
+}
+
+.item-14 {
+     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940507/jquery_apn7lw.png);
+        background-size: contain;
+    background-position: center;
+    margin-bottom: 10%;
+    background-repeat: no-repeat;
+}
+
+.item-15 {
+     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940508/office_tazja4.png);
+        background-size: contain;
+    background-position: center;
+    margin-bottom: 10%;
+    background-repeat: no-repeat;
+}
+
+.item-16 {
+     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940509/postgres_fxfvf0.png);
+        background-size: contain;
+    background-position: center;
+    margin-bottom: 10%;
+    background-repeat: no-repeat;
+}
+
+.item-17 {
+     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940508/responsive_a7c5q7.png);
+        background-size: contain;
+    background-position: center;
+    margin-bottom: 10%;
+    background-repeat: no-repeat;
+}
+
+.item-18 {
+     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940508/sass_sxpdyv.png);
+        background-size: contain;
+    background-position: center;
+    margin-bottom: 10%;
+    background-repeat: no-repeat;
+}
+
+.item-19 {
+     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940508/Lewagon_bysyzc.png);
+        background-size: contain;
+    background-position: center;
+    margin-bottom: 10%;
+    background-repeat: no-repeat;
+}
+
+.item-20 {
+     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940508/office_tazja4.png);
+        background-size: contain;
+    background-position: center;
+    margin-bottom: 10%;
+    background-repeat: no-repeat;
+}
+
+.item-21 {
+     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940508/office_tazja4.png);
+        background-size: contain;
+    background-position: center;
+    margin-bottom: 10%;
+    background-repeat: no-repeat;
+}
 /* Carousel */
 
 .carousel {
@@ -112,8 +236,7 @@ h1 {
 }
 
 .carousel-prev::before {
-    content: '\f053';
-    font-family: "FontAwesome";
+
 }
 
 .carousel-next {
@@ -122,8 +245,7 @@ h1 {
 }
 
 .carousel-next::before {
-    content: '\f054';
-    font-family: "FontAwesome";
+
 }
 
 .carousel-prev:hover,
