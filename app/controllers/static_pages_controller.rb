@@ -22,4 +22,8 @@ class StaticPagesController < ApplicationController
 
   def experience
   end
+
+  def travel
+
+  end
 end
