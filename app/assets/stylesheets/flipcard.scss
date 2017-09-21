@@ -1,296 +1,128 @@
-/* Page */
-
-
-h1 {
-    color: #555;
-    text-align: center;
-    margin: 50px 0;
+.carousel-wrapper{
+  height:40%;
+  position:relative;
+  width:70%;
+  margin:0 auto;
+}
+.carousel-item{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:25px 50px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow{
+  position:absolute;
+  top:0;
+  display:block;
+  width:50px;
+  height:100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-light.png") 50% 50% / 20px no-repeat;
 }
 
-.container {
-    width: 70%;
-    margin: 0 auto;
-    border: 2px solid #bbb;
+.arrow-prev{
+  left:0;
 }
 
-.carousel-item > div {
-    height: 400px;
-    line-height: 500px;
-    font-size: 1.5em;
-    text-align: center;
-    color: #fff;
+.arrow-next{
+    right:0;
+    -webkit-transform: rotate(180deg);
+     transform: rotate(180deg);
+  }
+
+.light{
+  color:white;
 }
+
+@media (max-width: 480px) {
+      .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+  }
 
 .item-1 {
-    background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505843112/Air_Medal_z3nvsn.png);
-       background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-
-.item-2 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505851689/aviator_h8gl7q.png);
-        background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-
-.item-3 {
-    background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505851293/BronzeStar_joli8d.png);
-       background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-
-.item-4 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505861377/airborne_ggwzls.png);
-       background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-
-.item-5 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940507/congressional_zhcjpw.png);
-        background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-.item-6 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940507/eagle_imisds.png);
-        background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-.item-7 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940508/venture_aqz4zy.png);
-        background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-.item-8 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940507/Agile_dobvr3.png);
-        background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-
-.item-9 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505862154/ror_iaqhvo.png);
-        background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-
-.item-10 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940507/git_ojwhxw.png);
-        background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-
-.item-11 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940507/github_omaoja.png);
-        background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-
-.item-12 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940507/heroku_graonu.png);
-        background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-
-.item-13 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940507/html_ktgxdy.png);
-        background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-
-.item-14 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940507/jquery_apn7lw.png);
-        background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-
-.item-15 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940508/office_tazja4.png);
-        background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-
-.item-16 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940509/postgres_fxfvf0.png);
-        background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-
-.item-17 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940508/responsive_a7c5q7.png);
-        background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-
-.item-18 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940508/sass_sxpdyv.png);
-        background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-
-.item-19 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940508/Lewagon_bysyzc.png);
-        background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-
-.item-20 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940508/office_tazja4.png);
-        background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-
-.item-21 {
-     background-image: url(http://res.cloudinary.com/x78163/image/upload/v1505940508/office_tazja4.png);
-        background-size: contain;
-    background-position: center;
-    margin-bottom: 10%;
-    background-repeat: no-repeat;
-}
-/* Carousel */
-
-.carousel {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
-
-.carousel-container {
-    list-style: none;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    width: 500%;
-    transition: transform 0.3s cubic-bezier(.694, .0482, .335, 1);
-}
-
-.carousel-item {
-    position: relative;
-    float: left;
-    width: 20%;
-}
-
-/* Next / Prev Buttons */
-
-.carousel-prev,
-.carousel-next {
-    position: absolute;
-    top: 50%;
-    background-color: #222;
-    opacity: 0.7;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 1em;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    text-align: center;
-    z-index: 10;
-    transition: opacity 0.3s ease;
-}
-
-.carousel-prev {
-    left: 2%;
-    padding-right: 3px;
-}
-
-.carousel-prev::before {
-
-}
-
-.carousel-next {
-    right: 2%;
-    padding-left: 3px;
-}
-
-.carousel-next::before {
-
-}
-
-.carousel-prev:hover,
-.carousel-next:hover {
+    z-index: 2;
     opacity: 1;
+  background:url('http://res.cloudinary.com/x78163/image/upload/v1505940508/venture_aqz4zy.png');
+  background-size: 15em;
+    background-repeat: no-repeat;
+    background-position: center;
+        height: 24em;
+  }
+.item-2{
+  background:url('http://res.cloudinary.com/x78163/image/upload/v1505940507/eagle_imisds.png');
+   background-size: 15em;
+    background-repeat: no-repeat;
+    background-position: center;
+        height: 24em;
+}
+.item-3{
+  background:url('http://res.cloudinary.com/x78163/image/upload/v1505940507/congressional_zhcjpw.png');
+background-size: 15em;
+    background-repeat: no-repeat;
+    background-position: center;
+        height: 24em;
+
 }
 
-/* Pagination */
+.item-4{
+  background:url('http://res.cloudinary.com/x78163/image/upload/v1505851689/aviator_h8gl7q.png');
+background-size: 15em;
+    background-repeat: no-repeat;
+    background-position: center;
+        height: 24em;
 
-.carousel-pagination {
-    list-style: none;
-    position: absolute;
-    bottom: 3%;
-    left: 0;
-    right: 0;
-    width: 50%;
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
-    z-index: 10;
 }
 
-.carousel-bullet {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-color: #000;
-    cursor: pointer;
-    margin: 0 7px;
-    border-radius: 50%;
-    opacity: 0.5;
-    transition-property: transform, opacity, background-color;
-    transition-duration: 0.3s;
+.item-5{
+  background:url('http://res.cloudinary.com/x78163/image/upload/v1505851293/BronzeStar_joli8d.png');
+background-size: 15em;
+    background-repeat: no-repeat;
+    background-position: center;
+        height: 24em;
+
 }
 
-.carousel-bullet:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+.item-6{
+  background:url('http://res.cloudinary.com/x78163/image/upload/v1505861377/airborne_ggwzls.png');
+background-size: 15em;
+    background-repeat: no-repeat;
+    background-position: center;
+        height: 24em;
+
 }
 
-.carousel-bullet.active-bullet,
-.carousel-bullet.active-bullet:hover {
+.item-7{
+  background:url('http://res.cloudinary.com/x78163/image/upload/v1505843112/Air_Medal_z3nvsn.png');
+background-size: 15em;
+    background-repeat: no-repeat;
+    background-position: center;
+        height: 24em;
+
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
     opacity: 1;
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-    background-color: #fff;
-    cursor: default;
-}
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4, #item-5:target ~ .item-5, #item-6:target ~ .item-6, #item-7:target ~ .item-7 {
+    z-index: 3;
+    opacity: 1;
+  }
+
+
+
