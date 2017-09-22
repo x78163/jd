@@ -72,6 +72,15 @@ p {
     background-position-x: center;
     background-position-y: top;
 }
+
+.layer-bg2 {
+  background-image: linear-gradient(-30deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 4%), url('http://res.cloudinary.com/x78163/image/upload/v1504999499/camel3_mkzktx.png');
+    background-size: 150%;
+    margin-top: -3%;
+    background-position: top;
+    background-position-x: center;
+    background-position-y: top;
+}
 .layer-1 {
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_03.png
     ');
@@ -85,6 +94,19 @@ p {
     ');
     background-position: right;
         margin-top: 10%;
+    }
+
+    .layer-2a {
+  background-image: linear-gradient(-30deg, rgba(0, 101, 168, 0.12) 0%, rgba(0, 36, 61, 0.13) 4%),  url('http://res.cloudinary.com/x78163/image/upload/v1504999505/camel2_ozto39.png');
+}
+
+
+
+.layer-3a {
+  background-image:   url('http://res.cloudinary.com/x78163/image/upload/v1504999229/camel1_mt0tpw.png
+    ');
+    background-position: right;
+        margin-top: -15%;
     }
 .layer-4 {
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png
