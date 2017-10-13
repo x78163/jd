@@ -19,5 +19,9 @@ Rails.application.routes.draw do
 
   get 'travel' => 'static_pages#travel'
 
+  get 'ubiqum1' => 'static_pages#ubiqum1'
+
+  get 'ubiqum2' => 'static_pages#ubiqum2'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

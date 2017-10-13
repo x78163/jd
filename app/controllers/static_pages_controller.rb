@@ -26,4 +26,12 @@ class StaticPagesController < ApplicationController
   def travel
 
   end
+
+  def ubiqum1
+
+  end
+
+  def ubiqum2
+
+  end
 end
