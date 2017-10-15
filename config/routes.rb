@@ -23,5 +23,7 @@ Rails.application.routes.draw do
 
   get 'ubiqum2' => 'static_pages#ubiqum2'
 
+  get 'ubiqum3' => 'static_pages#ubiqum3'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

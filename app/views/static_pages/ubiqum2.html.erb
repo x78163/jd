@@ -3,7 +3,7 @@
 
 
   <div class="article">
-    <div class="wrapper" style="background: url('http://res.cloudinary.com/x78163/image/upload/v1504646029/picture051_r0sb75.jpg') no-repeat center center fixed;">
+    <div class="wrapper" style="background: url('http://res.cloudinary.com/x78163/image/upload/v1507905293/Ubiqum1-0_gm0r0i.jpg') no-repeat center center fixed;">
       <div class="wrapperText">
         <h1 id="blog">
           <mark>Week 2 of Ubiqum's Data Scientist Bootcamp (Barcelona)
@@ -24,48 +24,205 @@
       </div>
       <!--The Text is generated with hipsum.co :) Check it out! -->
       <div class="articleText">
-        <h4 class="introduction" id="blog">FINALLY IN THE GROOVE.  BUT IT CAN'T BE THAT EASY...THE CATALAN INDEPENDENCE MOVEMENT HITS A PEAK THIS WEEK.  BUT I FINALLY START TO LEARN SOME COOL NEW MACHINE LEARNING ALGORITHMS SUCH AS KNN AND SVM.  THESE CONCEPTS HAVE A TON OF POWER AND POTENTIAL...IT JUST TAKES SOME IMAGINATION.</h4>
+        <h4 class="introduction" id="blog">THIS WEEK WE WORK ON PREDICTING PROFITS FROM A COMPANY GIVEN A HISTORICAL LIST OF PRODUCTS. THIS PART IS PRETTY EXCITING SINCE IT MEANS WE ARE CREATING SOMETHING OUT OF NOTHING!!!</h4>
 
+          <br>
+          <br>
+
+        <h2 id="blog">Monday 9 OCT 17</h2>
+          <br>
+        <p id="blog">
+        Today we sat down with the teacher and did a 1 on 1 about our assignments from last week.  It was good to have a chance to review over the files.  Unfortunately, it seems as though there is a disconnect over who writes the requirements and who grades the requirements.  The submission guidelines outlines effectively 3 different documents, a writeup for the customer, a methods writeup for the instructors and the rapidminer file.  I realized after the 1 on 1 that requirements do change, and the instructors seem to not be kept in the loop.
+        </p>
+
+          <br>
+
+        <p id="blog">
+        The major feedback was making sure I used more scatter plots (ugh) and formatting the paper in a more standard fashion.  I need to be better at explaining abstract concepts I find.  Additionally, I was a little too aggressive with my suggestions to the client, and perhaps overstepped my bounds by giving marching orders to the marketing department, etc.  Otherwise, it was well received.  I can definitely improve on this for next time.
+        </p>
+
+          <br>
+
+         <p id="blog">
+         Unlike last week, I began by reading over all of the documentation and watching all of the related videos.  Of note, there was one Stanford professor (Dr. Ng) who had an excellent lecture.  I found his brief discussion on using a KNN type technique to parse a still photo into a 3d scene fascinating.  I’ll need to follow up on more of his lectures.
+        </p>
+
+          <br>
+
+         <p id="blog">
+         I started this week’s assignment; predicting sales for untested products.  Effectively, we receive several excel documents with historical sales information and product qualities (weight, price, popularity, etc) and then another document with no sales information (the new products).  We build a model using the first set of data and then apply it to the second set to try to predict sales volume based upon the product qualities.  The dataset has missing values, perfect correlation to linear regression and repeated data.
+        </p>
+
+          <br>
+
+        <p id="blog">
+        I followed the explained 9 step method and threw it up on One Note.  The steps are:
+        </p>
+
+          <br>
+
+        <ol>
+          <li>Obtain the data</li>
+          <li>Clean the data</li>
+          <li>Import the data</li>
+          <li>Initial exploration of the data</li>
+          <li>Preprocess</li>
+          <li>Feature selection</li>
+          <li>Modeling and algorithm optimization</li>
+          <li>Making predictions</li>
+          <li> Report on the findings</li>
+        </ol>
+
+        <p id="blog">
+        Using One Note, I could mark up all of the sheets with my pen and check off requirements as I went.  This go around, each step will have its own page.
+        </p>
+
+          <br>
+
+        <p id="blog">
+        As I progressed, we had a class discussion on what to do about missing data.  Some people wanted to just omit the line items and others wanted to average other values to fill in the blanks.  The instructors told us a third option was to model the incomplete dataset and then train it to fill in the blanks.  That is the approach I am going to try.  I am using the missing values/impute missing values operator in rapidminer to do this.  Unfortunately, I couldn’t get completely done today, soooo I’ll have to try it out tomorrow.  Until next time……
+        </p>
+
+          <br>
+          <br>
+
+        <h2 id="blog">Tuesday 10 OCT 17</h2>
+
+          <br>
+
+        <p id="blog">
+        Alright!  Today is the announcement of the Catalan Independence and I also figured out how to get the impute values to work!
+        </p>
+
+          <br>
+
+        <p id="blog">
+        After discussions with the teacher, I found out that I wasn’t passing the role to the method in the impute values.  This meant the impute values method didn’t know what to act upon.  So I quickly selected Best Sellers Rankings (the variable with missing values) and Bam!  It worked perfectly!
+        </p>
+
+          <br>
+
+        <p id="blog">
+        Now, on to the next hurdle…selecting the right model.  So, this part is the tedious task of changing seed values and comparing the results.  For the exercise, we are using the Boosted Gain, KVM and KNN.  Each of these models have various ups and downsides, and it is up to us to identify which performs best.  We do this by changing the model iterations, number of seeds or number of trees.  Each one has different parameters
+        </p>
+
+          <br>
+
+        <p id="blog">
+        To effectively find the right property, I bracket the values.  I start with 1 and go to 5.  If it is getting better at 5, I go to 10, if it gets better at 10, I try 20.  When it gets worse, I go backwards between the last check and the current check and keep dividing by two.  I used one note to throw up every value in a giant whiteboard chart.  Using the performance vector values of R^2 and the RMSE, I looked for R^2 closest to 1 and the lowest RMSE.  But I made a mistake (which I will discuss tomorrow).  I ran close to 30 tests combined across all the models, and SVM was my winner.  This gave me an RMSE of 1434 and .507 for R^2.  Not awesome, but let’s see what we got.
+        </p>
+
+          <br>
+
+        <p id="blog">
+        I plugged the new products list into the model and obtained predictions from the SVM optimized model on which products would have the highest sales volumes.  This was cool!  I actually created substantive data out of nothing.  Basically, the algorithm outputted a predicted volume for each of the new products.  I then took the volume numbers and calculated predicted profits using the profit margin and price attributes.  I built an excel table and then called it quits for iteration 1.  Now for iteration 2.
+        </p>
+
+          <br>
+
+        <p id="blog">
+        I went back to my dataset and included the 2 star values (which I had previously omitted).  The correlation value for the 2 star values was close enough to .85 where I could have gone either way.  So I ran it through the gauntlet, testing all of the models again and finally selecting the best model.  Unfortunately, the values were far worse on the performance vector readout than before.  So…I reversed the change and then looked at running iteration 3: removing the outliers.  However, that was the end of the day for me, and I had to get over to the Arc d’Triumph to see the rally outside of the Catalan Parliament.
+
+        </p>
+        <br>
 
         <div class="video-container">
-          <iframe  height="315" width="560" src="//www.youtube.com/embed/_0VCrcvKleo" frameborder="0" allowfullscreen modestbranding="1" rel="0" showinfo="0" fs="0"></iframe>
-        </div>
+<iframe  height="315" width="560" src="//www.youtube.com/embed/AVmHkXHuM2w" frameborder="0" allowfullscreen modestbranding="1" rel="0" showinfo="0" fs="0"></iframe>
+</div>
 
+          <br>
+          <br>
 
-        <h2 id="blog">Monday</h2>
-        <p id="blog">The modern warfighter has access to significantly more    </p>
+        <h2 id="blog">Wednesday 11 OCT 17</h2>
 
-        <h2 id="blog">Tuesday</h2>
-        <p id="blog">enter text here   </p>
+          <br>
+
+        <p id="blog">
+        Time for iteration 3.  The night before was exciting, but uneventful. Politics is politics in every country.  So, today I researched how to exclude outliers in Rapidminer.  Of course I found several video tutorials which proved useful in that endeavor.  I selected the outlier function and then filtered by the outlier resultant column, creating a clean dataset.  Unfortunately, this pruning required a broad strokes approach and applied to every attribute.
+        </p>
+
+          <br>
+
+        <p id="blog">
+        I played with several ‘number of outliers’ values and settled on 6.  That seemed to weed out my extreme values on some of the attributes but not prune my data hedge too much.  After running this solution, I got some amazing results.  My R^2 jumped to over.8 and my RMSE dropped to the mid 200’s.  This was way better than before.
+        </p>
+
         <br>
-        <p id="blog">enter text here   </p>
+
+         <p id="blog">
+        I ran every model again, optimizing each one.  Surprisingly, the boosted gain was the winner this time around.  Now I ran into my headache.  Removing outliers screwed me up.  My final dataset had only 9 values out of 17.  But those 9 values had super high confidence associated with them.  So, how was I going to write up the report with almost 50% losses?
+        </p>
+
+          <br>
+
+        <p id="blog">
+        I decided to make a hybrid chart.  I would use all of the product values from iteration 1 and iteration 3.  For all products that made the iteration 3 cut, I would replace those on the iteration 1 list.  Therefore, there would be a list of all values, but each value would have different confidence.  So the customer gets a list of everything, but I don’t compromise on giving them a faulty report of lower confidence.  Win win.
+
+        </p>
+
+          <br>
+
+           <p id="blog">
+        With that figured out, I started collecting charts and building up my media collection to make my Friday report easier to write.  That about wraps up today, so I’m going to sign off for today.
+        </p>
+
+          <br>
+          <br>
+
+        <h2 id="blog">Thursday 12 OCT 17</h2>
+
+          <br>
+
+        <p id="blog">
+        National Holiday!  Today I worked on some augmented reality concepts using the Tango SDK.  Check out some of the projects  <a href="/aug" style=" color:blue;     ">here</a>!
+        </p>
+
+          <br>
+
+        <p id="blog">
+        Text
+        </p>
+
+          <br>
+          <br>
+
+        <h2 id="blog">Friday 13 OCT 17</h2>
+
+          <br>
+
+        <p id="blog">
+        Text
+        </p>
+
+          <br>
+
+        <p id="blog">
+        Text
+        </p>
+
+          <br>
+          <br>
 
 
 
-        <h2 id="blog">Wednesday </h2>
-        <p id="blog">ems.  </p>
+        <img class="articleImage" src="
+        http://res.cloudinary.com/x78163/image/upload/v1507905110/ubiqum_1-1_fonukp.jpg" alt="" />
+
+        <br>
+
+        <img class="articleImage" src="http://res.cloudinary.com/x78163/image/upload/v1507905110/ubiqum_1-2_kipsae.jpg" alt="" />
 
 
 
-        <h2 id="blog">Thursday </h2>
-        <p id="blog">functionality would be added as needed (keyboard, pointing devices, etc).   </p>
-
-
-        <h2 id="blog">Friday</h2>
-        <p id="blog">   </p>
-
-        <img class="articleImage" src="http://res.cloudinary.com/x78163/image/upload/v1505364268/1_k6mfcb.png" alt="" />
 
 
 
-        <img class="articleImage" src="http://res.cloudinary.com/x78163/image/upload/v1505364269/2_qfou0p.png" alt="" />
 
 
 
-        <img class="articleImage" src="http://res.cloudinary.com/x78163/image/upload/v1505364266/3_vyhkgw.png" alt="" />
-
-
-
+        <a href="/ubiqum3" style="text-align: center; color:blue;     font-size: 1.3em;
+        font-family: ubuntu;
+        font-weight: bolder;">Week 3!</a>
 
       </div>
     </div>

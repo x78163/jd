@@ -23,6 +23,7 @@ body#blog{
   line-height: 170%;
   color: #444;
   text-indent: 50px;
+  text-align: left;
 }
 
  h1#blog{
@@ -35,12 +36,13 @@ body#blog{
 }
 
  h2#blog{
-  font-size: .9rem;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
   font-family: 'Open Sans';
   line-height: 170%;
   color: #444;
+  font-weight:bolder;
 }
 h2#blog{
   margin-top: 20px;

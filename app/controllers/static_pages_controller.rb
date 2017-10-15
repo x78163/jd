@@ -34,4 +34,8 @@ class StaticPagesController < ApplicationController
   def ubiqum2
 
   end
+
+  def ubiqum3
+
+  end
 end
